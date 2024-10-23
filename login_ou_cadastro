@@ -1,0 +1,7 @@
+CREATE TABLE login_ou_cadastro(
+    Idlogin SERIAL PRIMARY KEY,
+    Email VARCHAR (100) UNIQUE NOT NULL,
+    Usuario VARCHAR (100) UNIQUE NOT NULL,
+    Senha VARCHAR (100) UNIQUE NOT NULL,
+    Esqueceu_a_senha VARCHAR (100) UNIQUE NOT NULL
+)
