@@ -1,0 +1,24 @@
+
+
+CREATE TABLE cadastroArvores (
+    Dominio VARCHAR(50) NOT NULL,
+    Reino  VARCHAR(50) NOT NULL,
+    Filo  VARCHAR(50) NOT NULL,
+    Classe  VARCHAR(50) NOT NULL,
+    Origem  VARCHAR(50) NOT NULL,
+    familia  VARCHAR(50) NOT NULL,
+    Genero  VARCHAR(50) NOT NULL,
+    Especie  VARCHAR(50) NOT NULL,
+    Id_login int NOT NULL,
+    foreign key (Id_login) REFERENCES login(idlogin)
+);
+
+
+INSERT INTO cadastroArvores (Dominio,Reino,Filo,Classe,Origem,familia,Genero,Especie)
+       VALUES ('','','','','','','','');
+
+SELECT * FROM cadastroArvores    
+
+
+
+
